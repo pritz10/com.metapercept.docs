@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <target name="dita2metapercept-webhelp-docs"
+       depends="dita2metapercept-webhelp-docs.init,
+                dita2html5"/>
+  <target name="dita2metapercept-webhelp-docs.init">
+    <property name="args.cssroot"
+          location="${dita.plugin.com.metapercept.docs.dir}/css"/>
+ <property name="args.xsl"
+          location="${dita.plugin.net.infotexture.dita-bootstrap.dir}/xsl/html5-bootstrap.xsl"/>
+    <property name="args.css" value="custom.css"/>
+    <property name="args.copycss" value="yes"/>
+    <property name="args.csspath" value="css"/>
+  </target>
+</project>

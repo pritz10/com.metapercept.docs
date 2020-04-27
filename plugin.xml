@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
+<plugin id="com.metapercept.docs">
+  <require plugin="org.dita.htmlhelp"/>
+  <transtype name="metapercept-webhelp-docs" extends="htmlhelp" desc="customHtml"/>
+  <feature extension="ant.import" file="integrator.xml"/>
+</plugin>
