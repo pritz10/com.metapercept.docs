@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 
+<!-- Copyright © 2017 · infotexture · Roger W. Fienhold Sheen -->
+<!-- See the accompanying LICENSE file for applicable license -->
+
 <plugin id="com.metapercept.docs">
-  <require plugin="org.dita.htmlhelp"/>
-  <transtype name="metapercept-webhelp-docs" extends="htmlhelp" desc="customHtml"/>
-  <feature extension="ant.import" file="integrator.xml"/>
+  <feature extension="package.version" value="3.4.1"/>
+  <require plugin="org.dita.html5"/>
+  <transtype name="metapercept-webhelp-docs" extends="html5" desc="HTML5 with Bootstrap style"/>
+  <feature extension="ant.import" file="build.xml"/>
 </plugin>
