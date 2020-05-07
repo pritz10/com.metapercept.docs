@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- Copyright © 2017 · infotexture · Roger W. Fienhold Sheen -->
+<!-- See the accompanying LICENSE file for applicable license -->
+
+<project>
+  <target name="dita2metapercept-webhelp-docs"
+       depends="dita2metapercept-webhelp-docs.init,
+                dita2html5, dita2metapercept-webhelp-docsDefaultOutput"/>
+  <target name="dita2metapercept-webhelp-docs.init">
+    <property name="args.hdf"
+          location="${dita.plugin.com.metapercept.docs.dir}/includes/bootstrap.hdf.xml"/>
+    <property name="args.hdr"
+          location="${dita.plugin.com.metapercept.docs.dir}/includes/bs-navbar-default.hdr.xml"/>
+    <property name="args.xsl"
+          location="${dita.plugin.com.metapercept.docs.dir}/xsl/html5-bootstrap.xsl"/>
+    <property name="args.html5.toc" value="toc"/>
+    <property name="nav-toc" value="partial"/>
+    <property name="args.cssroot"
+          location="${dita.plugin.com.metapercept.docs.dir}/css"/>
+    <property name="args.css" value="custom.css"/>
+    <property name="args.copycss" value="yes"/>
+    <property name="args.csspath" value="css"/>
+  </target>
+  
+  <target name="dita2metapercept-webhelp-docsDefaultOutput">
+       <copy todir="${dita.output.dir}${file.separator}assets"><fileset dir="${dita.plugin.com.metapercept.docs.dir}${file.separator}assets"><include name="**/*"/></fileset></copy>
+  </target> 
+
+</project>
