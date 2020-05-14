@@ -13,8 +13,7 @@ nav[role=toc] li.active > a {
 .bs-docs-sidenav li ul {
   padding-left: 10px;
 }
-*/
-/* Fix table conflict with bootstrap's row class */
+ 
 .table .row {
   display: table-row;
 }
