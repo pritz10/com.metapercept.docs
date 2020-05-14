@@ -22,7 +22,7 @@
     <property name="args.copycss" value="yes"/>
     <property name="args.csspath" value="css"/>
   </target>
-  
+  /* For copying asset folder */
   <target name="dita2metapercept-webhelp-docsDefaultOutput">
        <copy todir="${dita.output.dir}${file.separator}assets"><fileset dir="${dita.plugin.com.metapercept.docs.dir}${file.separator}assets"><include name="**/*"/></fileset></copy>
   </target> 
