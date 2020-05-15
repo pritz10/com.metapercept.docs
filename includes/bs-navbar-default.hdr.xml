@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div class="container">
  
 
-    <a class="navbar-brand" href="/"><img src="<img src="assets\css\meta-logo2.svg" width="30" height="30" class="img-responsive"/>Dita Expresso</a>
+    <a class="navbar-brand" href="/"><img src="<img src="..\assets\css\meta-logo2.svg" width="30" height="30" class="img-responsive"/>Dita Expresso</a>
      <img src="C:\Users\Pritz\Desktop\OUT\css/meta-logo2.svg" width="100" height="30" class="cmp_logo"/>
     <button
       class="navbar-toggler"
